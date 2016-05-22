@@ -1,0 +1,10 @@
+<h1>Edit user</h1>
+
+User's email: <%= @user.email %>
+
+<%= form_for @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit 'Save' %>
+<% end %>
