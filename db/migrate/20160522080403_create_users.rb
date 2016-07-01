@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :email
       t.string :name
       t.string :login_token
-      t.string :login_token_valid_until
+      t.datetime :login_token_valid_until
 
       t.timestamps
     end
